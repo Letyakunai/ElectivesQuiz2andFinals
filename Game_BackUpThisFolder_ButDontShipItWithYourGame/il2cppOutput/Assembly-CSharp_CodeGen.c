@@ -78,17 +78,27 @@ extern void FirstPersonController_GetLookInput_mE711583A6A8DB52DAB573348BDBFA9F7
 extern void FirstPersonController_GetMovementInput_m16078918A608DE73044FEECF33FA8132B38392D2 (void);
 // 0x00000021 System.Void FirstPersonController::.ctor()
 extern void FirstPersonController__ctor_m709B160DB12615DE3A2A6858F4FFE0CAA1B97002 (void);
-// 0x00000022 System.Void Interaction_1::Start()
-extern void Interaction_1_Start_mAB1A8B923CACC49CB9BBF471CC5A4C98260D741E (void);
-// 0x00000023 System.Void Interaction_1::Update()
-extern void Interaction_1_Update_mDD6AD381B0EFE72CEC1D0B79530E872E71636FED (void);
-// 0x00000024 System.Void Interaction_1::.ctor()
-extern void Interaction_1__ctor_mD1FBA47A9107330E1B5908C3F0575A1536581B0B (void);
-// 0x00000025 System.Void Unity.Template.VR.XRPlatformControllerSetup::Start()
+// 0x00000022 System.Void Respawn_Script::Awake()
+extern void Respawn_Script_Awake_m4A0429444CCB0AFA68BACB26D3C6DDA0137CFC8A (void);
+// 0x00000023 System.Void Respawn_Script::Respawn()
+extern void Respawn_Script_Respawn_m9A3FFDF03927E780A135A0C2EB70FC6E234B9C05 (void);
+// 0x00000024 System.Void Respawn_Script::.ctor()
+extern void Respawn_Script__ctor_m99BD3287B20463ED0EEFCA92549C0C92E7B13271 (void);
+// 0x00000025 System.Void Target_Scripts::Update()
+extern void Target_Scripts_Update_mFB677E5C3E607EFE0C8303A2A7178DD161FD6DBE (void);
+// 0x00000026 System.Void Target_Scripts::AddCount()
+extern void Target_Scripts_AddCount_mE1F7D4C04686C8B739D203674B4BD6E3BB7B92DE (void);
+// 0x00000027 System.Void Target_Scripts::ReduceCount()
+extern void Target_Scripts_ReduceCount_m9E57BFD82B9754D80445CED1727F889BE03F39CE (void);
+// 0x00000028 System.Void Target_Scripts::CountCheck()
+extern void Target_Scripts_CountCheck_m3143A44B2246EF8038350B69F0EB5315DA237620 (void);
+// 0x00000029 System.Void Target_Scripts::.ctor()
+extern void Target_Scripts__ctor_mF7766352E9C9E1878277B60FEDAFE0B781A05F4C (void);
+// 0x0000002A System.Void Unity.Template.VR.XRPlatformControllerSetup::Start()
 extern void XRPlatformControllerSetup_Start_m1F22FCA29DFD83DC0E343C3F391D04A7C52085BF (void);
-// 0x00000026 System.Void Unity.Template.VR.XRPlatformControllerSetup::.ctor()
+// 0x0000002B System.Void Unity.Template.VR.XRPlatformControllerSetup::.ctor()
 extern void XRPlatformControllerSetup__ctor_mF9A3998AF90962CF8F35BAF2221558BDF5F6596E (void);
-static Il2CppMethodPointer s_methodPointers[38] = 
+static Il2CppMethodPointer s_methodPointers[43] = 
 {
 	SkyboxCamera_Start_mF11568CD7D4C734C7F24B38DBEACFD788BDB225C,
 	SkyboxCamera_Update_m1400FFF7BE6E1D94B8643B506E02FFE83E4D4AF7,
@@ -123,13 +133,18 @@ static Il2CppMethodPointer s_methodPointers[38] =
 	FirstPersonController_GetLookInput_mE711583A6A8DB52DAB573348BDBFA9F7FEBB996A,
 	FirstPersonController_GetMovementInput_m16078918A608DE73044FEECF33FA8132B38392D2,
 	FirstPersonController__ctor_m709B160DB12615DE3A2A6858F4FFE0CAA1B97002,
-	Interaction_1_Start_mAB1A8B923CACC49CB9BBF471CC5A4C98260D741E,
-	Interaction_1_Update_mDD6AD381B0EFE72CEC1D0B79530E872E71636FED,
-	Interaction_1__ctor_mD1FBA47A9107330E1B5908C3F0575A1536581B0B,
+	Respawn_Script_Awake_m4A0429444CCB0AFA68BACB26D3C6DDA0137CFC8A,
+	Respawn_Script_Respawn_m9A3FFDF03927E780A135A0C2EB70FC6E234B9C05,
+	Respawn_Script__ctor_m99BD3287B20463ED0EEFCA92549C0C92E7B13271,
+	Target_Scripts_Update_mFB677E5C3E607EFE0C8303A2A7178DD161FD6DBE,
+	Target_Scripts_AddCount_mE1F7D4C04686C8B739D203674B4BD6E3BB7B92DE,
+	Target_Scripts_ReduceCount_m9E57BFD82B9754D80445CED1727F889BE03F39CE,
+	Target_Scripts_CountCheck_m3143A44B2246EF8038350B69F0EB5315DA237620,
+	Target_Scripts__ctor_mF7766352E9C9E1878277B60FEDAFE0B781A05F4C,
 	XRPlatformControllerSetup_Start_m1F22FCA29DFD83DC0E343C3F391D04A7C52085BF,
 	XRPlatformControllerSetup__ctor_mF9A3998AF90962CF8F35BAF2221558BDF5F6596E,
 };
-static const int32_t s_InvokerIndices[38] = 
+static const int32_t s_InvokerIndices[43] = 
 {
 	6502,
 	6502,
@@ -169,12 +184,17 @@ static const int32_t s_InvokerIndices[38] =
 	6502,
 	6502,
 	6502,
+	6502,
+	6502,
+	6502,
+	6502,
+	6502,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	38,
+	43,
 	s_methodPointers,
 	0,
 	NULL,
