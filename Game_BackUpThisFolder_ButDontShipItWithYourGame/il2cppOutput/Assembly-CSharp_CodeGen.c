@@ -78,27 +78,43 @@ extern void FirstPersonController_GetLookInput_mE711583A6A8DB52DAB573348BDBFA9F7
 extern void FirstPersonController_GetMovementInput_m16078918A608DE73044FEECF33FA8132B38392D2 (void);
 // 0x00000021 System.Void FirstPersonController::.ctor()
 extern void FirstPersonController__ctor_m709B160DB12615DE3A2A6858F4FFE0CAA1B97002 (void);
-// 0x00000022 System.Void Respawn_Script::Awake()
+// 0x00000022 System.Void LightToggle::Start()
+extern void LightToggle_Start_mEC85DB543B93CC0AF608A6B5D8C2690C96455583 (void);
+// 0x00000023 System.Void LightToggle::Update()
+extern void LightToggle_Update_mC64AED3CC0CECDC170723878448B5F69D7EDABE2 (void);
+// 0x00000024 System.Void LightToggle::ToggleLight()
+extern void LightToggle_ToggleLight_mF4BD1547BB8E75C56A384185929D6570F67B5EF4 (void);
+// 0x00000025 System.Void LightToggle::.ctor()
+extern void LightToggle__ctor_m3962F236C8AAC9650ABC953B44751475AE22924C (void);
+// 0x00000026 System.Void Respawn_Script::Awake()
 extern void Respawn_Script_Awake_m4A0429444CCB0AFA68BACB26D3C6DDA0137CFC8A (void);
-// 0x00000023 System.Void Respawn_Script::Respawn()
+// 0x00000027 System.Void Respawn_Script::Respawn()
 extern void Respawn_Script_Respawn_m9A3FFDF03927E780A135A0C2EB70FC6E234B9C05 (void);
-// 0x00000024 System.Void Respawn_Script::.ctor()
+// 0x00000028 System.Void Respawn_Script::.ctor()
 extern void Respawn_Script__ctor_m99BD3287B20463ED0EEFCA92549C0C92E7B13271 (void);
-// 0x00000025 System.Void Target_Scripts::Update()
+// 0x00000029 System.Void Target_Scripts::Update()
 extern void Target_Scripts_Update_mFB677E5C3E607EFE0C8303A2A7178DD161FD6DBE (void);
-// 0x00000026 System.Void Target_Scripts::AddCount()
+// 0x0000002A System.Void Target_Scripts::AddCount()
 extern void Target_Scripts_AddCount_mE1F7D4C04686C8B739D203674B4BD6E3BB7B92DE (void);
-// 0x00000027 System.Void Target_Scripts::ReduceCount()
+// 0x0000002B System.Void Target_Scripts::ReduceCount()
 extern void Target_Scripts_ReduceCount_m9E57BFD82B9754D80445CED1727F889BE03F39CE (void);
-// 0x00000028 System.Void Target_Scripts::CountCheck()
+// 0x0000002C System.Void Target_Scripts::CountCheck()
 extern void Target_Scripts_CountCheck_m3143A44B2246EF8038350B69F0EB5315DA237620 (void);
-// 0x00000029 System.Void Target_Scripts::.ctor()
+// 0x0000002D System.Void Target_Scripts::.ctor()
 extern void Target_Scripts__ctor_mF7766352E9C9E1878277B60FEDAFE0B781A05F4C (void);
-// 0x0000002A System.Void Unity.Template.VR.XRPlatformControllerSetup::Start()
+// 0x0000002E System.Void TorchScript::Start()
+extern void TorchScript_Start_m67E1A853A59108C2A0AE26CC618FA635A27B9862 (void);
+// 0x0000002F System.Void TorchScript::Update()
+extern void TorchScript_Update_m01FEE35DB488AB2AEC9CA1AD6ADA7978B12E8E05 (void);
+// 0x00000030 System.Void TorchScript::ToggleLight()
+extern void TorchScript_ToggleLight_m180EE452CEB26D8DAE9AAB02D90EED2C424E17CD (void);
+// 0x00000031 System.Void TorchScript::.ctor()
+extern void TorchScript__ctor_mCD136CB8629D3F7F0B29D3738B96F8CE2E3C99A7 (void);
+// 0x00000032 System.Void Unity.Template.VR.XRPlatformControllerSetup::Start()
 extern void XRPlatformControllerSetup_Start_m1F22FCA29DFD83DC0E343C3F391D04A7C52085BF (void);
-// 0x0000002B System.Void Unity.Template.VR.XRPlatformControllerSetup::.ctor()
+// 0x00000033 System.Void Unity.Template.VR.XRPlatformControllerSetup::.ctor()
 extern void XRPlatformControllerSetup__ctor_mF9A3998AF90962CF8F35BAF2221558BDF5F6596E (void);
-static Il2CppMethodPointer s_methodPointers[43] = 
+static Il2CppMethodPointer s_methodPointers[51] = 
 {
 	SkyboxCamera_Start_mF11568CD7D4C734C7F24B38DBEACFD788BDB225C,
 	SkyboxCamera_Update_m1400FFF7BE6E1D94B8643B506E02FFE83E4D4AF7,
@@ -133,6 +149,10 @@ static Il2CppMethodPointer s_methodPointers[43] =
 	FirstPersonController_GetLookInput_mE711583A6A8DB52DAB573348BDBFA9F7FEBB996A,
 	FirstPersonController_GetMovementInput_m16078918A608DE73044FEECF33FA8132B38392D2,
 	FirstPersonController__ctor_m709B160DB12615DE3A2A6858F4FFE0CAA1B97002,
+	LightToggle_Start_mEC85DB543B93CC0AF608A6B5D8C2690C96455583,
+	LightToggle_Update_mC64AED3CC0CECDC170723878448B5F69D7EDABE2,
+	LightToggle_ToggleLight_mF4BD1547BB8E75C56A384185929D6570F67B5EF4,
+	LightToggle__ctor_m3962F236C8AAC9650ABC953B44751475AE22924C,
 	Respawn_Script_Awake_m4A0429444CCB0AFA68BACB26D3C6DDA0137CFC8A,
 	Respawn_Script_Respawn_m9A3FFDF03927E780A135A0C2EB70FC6E234B9C05,
 	Respawn_Script__ctor_m99BD3287B20463ED0EEFCA92549C0C92E7B13271,
@@ -141,60 +161,72 @@ static Il2CppMethodPointer s_methodPointers[43] =
 	Target_Scripts_ReduceCount_m9E57BFD82B9754D80445CED1727F889BE03F39CE,
 	Target_Scripts_CountCheck_m3143A44B2246EF8038350B69F0EB5315DA237620,
 	Target_Scripts__ctor_mF7766352E9C9E1878277B60FEDAFE0B781A05F4C,
+	TorchScript_Start_m67E1A853A59108C2A0AE26CC618FA635A27B9862,
+	TorchScript_Update_m01FEE35DB488AB2AEC9CA1AD6ADA7978B12E8E05,
+	TorchScript_ToggleLight_m180EE452CEB26D8DAE9AAB02D90EED2C424E17CD,
+	TorchScript__ctor_mCD136CB8629D3F7F0B29D3738B96F8CE2E3C99A7,
 	XRPlatformControllerSetup_Start_m1F22FCA29DFD83DC0E343C3F391D04A7C52085BF,
 	XRPlatformControllerSetup__ctor_mF9A3998AF90962CF8F35BAF2221558BDF5F6596E,
 };
-static const int32_t s_InvokerIndices[43] = 
+static const int32_t s_InvokerIndices[51] = 
 {
-	6502,
-	6502,
-	6502,
-	6502,
-	6502,
-	6502,
-	2821,
-	6502,
-	6416,
-	5164,
-	6415,
-	5163,
-	2881,
-	2889,
-	5132,
-	6502,
-	1456,
-	2847,
-	2889,
-	6502,
-	6502,
-	6502,
-	6502,
-	6502,
-	6502,
-	6502,
-	6502,
-	6502,
-	6502,
-	6502,
-	6491,
-	6493,
-	6502,
-	6502,
-	6502,
-	6502,
-	6502,
-	6502,
-	6502,
-	6502,
-	6502,
-	6502,
-	6502,
+	6505,
+	6505,
+	6505,
+	6505,
+	6505,
+	6505,
+	2822,
+	6505,
+	6419,
+	5166,
+	6418,
+	5165,
+	2882,
+	2890,
+	5134,
+	6505,
+	1457,
+	2848,
+	2890,
+	6505,
+	6505,
+	6505,
+	6505,
+	6505,
+	6505,
+	6505,
+	6505,
+	6505,
+	6505,
+	6505,
+	6494,
+	6496,
+	6505,
+	6505,
+	6505,
+	6505,
+	6505,
+	6505,
+	6505,
+	6505,
+	6505,
+	6505,
+	6505,
+	6505,
+	6505,
+	6505,
+	6505,
+	6505,
+	6505,
+	6505,
+	6505,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	43,
+	51,
 	s_methodPointers,
 	0,
 	NULL,

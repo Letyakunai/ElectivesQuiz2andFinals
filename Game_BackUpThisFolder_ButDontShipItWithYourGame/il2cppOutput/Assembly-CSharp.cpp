@@ -104,6 +104,8 @@ struct FirstPersonController_tE8AFB5AAF13A04E655C31D600DD3D70AB1EE4443;
 struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
 // KeepFrameFeature
 struct KeepFrameFeature_t34CABB059AA2A81C7D441894DED29F3DB47CD841;
+// LightToggle
+struct LightToggle_t6C44FD5A0C01E78EF6E2458C0D28CA50BE51896F;
 // UnityEngine.Material
 struct Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3;
 // UnityEngine.Mesh
@@ -138,6 +140,8 @@ struct SkyboxCamera_t8040BE25E3C1C474203BC5962859BC48D32FC45A;
 struct String_t;
 // Target_Scripts
 struct Target_Scripts_t59BC5085B586675BFC29C3505B35BAA5E20BFE68;
+// TorchScript
+struct TorchScript_tA7028B0F916C4DDD7C967475BC03DE6FAFFD4897;
 // UnityEngine.Transform
 struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1;
 // UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset
@@ -185,8 +189,10 @@ IL2CPP_EXTERN_C String_t* _stringLiteral16DD21BE77B115D392226EB71A2D3A9FDC29E3F0
 IL2CPP_EXTERN_C String_t* _stringLiteral265E15F1F86F1C766555899D5771CF29055DE75A;
 IL2CPP_EXTERN_C String_t* _stringLiteral40B1AE9913657AC85F32234D5ADC4FBFACBD0FF4;
 IL2CPP_EXTERN_C String_t* _stringLiteral4B1DCFD7F3AE204CAF131DBC4D98505C7313CAD0;
+IL2CPP_EXTERN_C String_t* _stringLiteral5CE36D1049E621945C0048E2ACEBBD3BAA0E02B3;
 IL2CPP_EXTERN_C String_t* _stringLiteral7F8C014BD4810CC276D0F9F81A1E759C7B098B1E;
 IL2CPP_EXTERN_C String_t* _stringLiteral88BEE283254D7094E258B3A88730F4CC4F1E4AC7;
+IL2CPP_EXTERN_C String_t* _stringLiteral92537122D3BA189947E3A15F355DFAEDFFC9243C;
 IL2CPP_EXTERN_C String_t* _stringLiteralAEA953E31B1A6904795730B766507FA4D60EE1F3;
 IL2CPP_EXTERN_C String_t* _stringLiteralB87CC029578F0C6F88E01A8257EBF1ED95223CEC;
 IL2CPP_EXTERN_C String_t* _stringLiteralEF46405CA80CBAD3E62532DD157FB35BA80170F4;
@@ -1353,6 +1359,13 @@ struct FirstPersonController_tE8AFB5AAF13A04E655C31D600DD3D70AB1EE4443  : public
 	uint8_t ___m_ButtonMovementFlags_10;
 };
 
+// LightToggle
+struct LightToggle_t6C44FD5A0C01E78EF6E2458C0D28CA50BE51896F  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// System.Boolean LightToggle::Toggled
+	bool ___Toggled_4;
+};
+
 // Respawn_Script
 struct Respawn_Script_t88D03B35747219AF468AECAF91B270898938F0E7  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -1389,6 +1402,13 @@ struct Target_Scripts_t59BC5085B586675BFC29C3505B35BAA5E20BFE68  : public MonoBe
 {
 	// System.Int32 Target_Scripts::Count
 	int32_t ___Count_4;
+};
+
+// TorchScript
+struct TorchScript_tA7028B0F916C4DDD7C967475BC03DE6FAFFD4897  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// System.Boolean TorchScript::Toggled
+	bool ___Toggled_4;
 };
 
 // Unity.Template.VR.XRPlatformControllerSetup
@@ -1787,6 +1807,10 @@ struct UniversalRenderPipelineAsset_tE8A9AA6F030CC3B558CEA2EB54FFF4FC58CA6232_St
 
 // FirstPersonController
 
+// LightToggle
+
+// LightToggle
+
 // Respawn_Script
 
 // Respawn_Script
@@ -1802,6 +1826,10 @@ struct UniversalRenderPipelineAsset_tE8A9AA6F030CC3B558CEA2EB54FFF4FC58CA6232_St
 // Target_Scripts
 
 // Target_Scripts
+
+// TorchScript
+
+// TorchScript
 
 // Unity.Template.VR.XRPlatformControllerSetup
 
@@ -1983,16 +2011,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CharacterController_Move_mE3F7AC1B4A2
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Input_GetAxis_m10372E6C5FF591668D2DC5F58C58D213CC598A62 (String_t* ___0_axisName, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Vector2::.ctor(System.Single,System.Single)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) ;
+// UnityEngine.Transform UnityEngine.Transform::Find(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Transform_Find_m3087032B0E1C5B96A2D2C27020BAEAE2DA08F932 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, String_t* ___0_n, const RuntimeMethod* method) ;
 // UnityEngine.GameObject UnityEngine.Component::get_gameObject()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.GameObject::SetActive(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___0_value, const RuntimeMethod* method) ;
 // UnityEngine.Transform UnityEngine.GameObject::get_transform()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
 // System.Void Target_Scripts::CountCheck()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Target_Scripts_CountCheck_m3143A44B2246EF8038350B69F0EB5315DA237620 (Target_Scripts_t59BC5085B586675BFC29C3505B35BAA5E20BFE68* __this, const RuntimeMethod* method) ;
-// UnityEngine.Transform UnityEngine.Transform::Find(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Transform_Find_m3087032B0E1C5B96A2D2C27020BAEAE2DA08F932 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, String_t* ___0_n, const RuntimeMethod* method) ;
-// System.Void UnityEngine.GameObject::SetActive(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___0_value, const RuntimeMethod* method) ;
 // UnityEngine.XR.Management.XRGeneralSettings UnityEngine.XR.Management.XRGeneralSettings::get_Instance()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR XRGeneralSettings_t8F8D096944606B5AD845D010706BF7094ADEC8CE* XRGeneralSettings_get_Instance_m9F222F982E62E066E119754858D8E73CFE42048C_inline (const RuntimeMethod* method) ;
 // UnityEngine.XR.Management.XRManagerSettings UnityEngine.XR.Management.XRGeneralSettings::get_Manager()
@@ -3224,6 +3252,107 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FirstPersonController__ctor_m709B160DB12
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void LightToggle::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightToggle_Start_mEC85DB543B93CC0AF608A6B5D8C2690C96455583 (LightToggle_t6C44FD5A0C01E78EF6E2458C0D28CA50BE51896F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5CE36D1049E621945C0048E2ACEBBD3BAA0E02B3);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// transform.Find("Light").gameObject.SetActive(false);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
+		L_0 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_0);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
+		L_1 = Transform_Find_m3087032B0E1C5B96A2D2C27020BAEAE2DA08F932(L_0, _stringLiteral5CE36D1049E621945C0048E2ACEBBD3BAA0E02B3, NULL);
+		NullCheck(L_1);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
+		L_2 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_1, NULL);
+		NullCheck(L_2);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LightToggle::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightToggle_Update_mC64AED3CC0CECDC170723878448B5F69D7EDABE2 (LightToggle_t6C44FD5A0C01E78EF6E2458C0D28CA50BE51896F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5CE36D1049E621945C0048E2ACEBBD3BAA0E02B3);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if(Toggled == true)
+		bool L_0 = __this->___Toggled_4;
+		if (!L_0)
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		// transform.Find("Light").gameObject.SetActive(true);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
+		L_1 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_1);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+		L_2 = Transform_Find_m3087032B0E1C5B96A2D2C27020BAEAE2DA08F932(L_1, _stringLiteral5CE36D1049E621945C0048E2ACEBBD3BAA0E02B3, NULL);
+		NullCheck(L_2);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
+		L_3 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_2, NULL);
+		NullCheck(L_3);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)1, NULL);
+		return;
+	}
+
+IL_0024:
+	{
+		// transform.Find("Light").gameObject.SetActive(false);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
+		L_4 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_4);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5;
+		L_5 = Transform_Find_m3087032B0E1C5B96A2D2C27020BAEAE2DA08F932(L_4, _stringLiteral5CE36D1049E621945C0048E2ACEBBD3BAA0E02B3, NULL);
+		NullCheck(L_5);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6;
+		L_6 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_5, NULL);
+		NullCheck(L_6);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LightToggle::ToggleLight()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightToggle_ToggleLight_mF4BD1547BB8E75C56A384185929D6570F67B5EF4 (LightToggle_t6C44FD5A0C01E78EF6E2458C0D28CA50BE51896F* __this, const RuntimeMethod* method) 
+{
+	{
+		// Toggled = !Toggled;
+		bool L_0 = __this->___Toggled_4;
+		__this->___Toggled_4 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
+		// }
+		return;
+	}
+}
+// System.Void LightToggle::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightToggle__ctor_m3962F236C8AAC9650ABC953B44751475AE22924C (LightToggle_t6C44FD5A0C01E78EF6E2458C0D28CA50BE51896F* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 // System.Void Respawn_Script::Awake()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Respawn_Script_Awake_m4A0429444CCB0AFA68BACB26D3C6DDA0137CFC8A (Respawn_Script_t88D03B35747219AF468AECAF91B270898938F0E7* __this, const RuntimeMethod* method) 
 {
@@ -3502,6 +3631,107 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Target_Scripts__ctor_mF7766352E9C9E18782
 	{
 		// private int Count = 1; //The number of targets. Default 1.
 		__this->___Count_4 = 1;
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void TorchScript::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TorchScript_Start_m67E1A853A59108C2A0AE26CC618FA635A27B9862 (TorchScript_tA7028B0F916C4DDD7C967475BC03DE6FAFFD4897* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral92537122D3BA189947E3A15F355DFAEDFFC9243C);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// transform.Find("Light and Particles").gameObject.SetActive(false);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
+		L_0 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_0);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
+		L_1 = Transform_Find_m3087032B0E1C5B96A2D2C27020BAEAE2DA08F932(L_0, _stringLiteral92537122D3BA189947E3A15F355DFAEDFFC9243C, NULL);
+		NullCheck(L_1);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
+		L_2 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_1, NULL);
+		NullCheck(L_2);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void TorchScript::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TorchScript_Update_m01FEE35DB488AB2AEC9CA1AD6ADA7978B12E8E05 (TorchScript_tA7028B0F916C4DDD7C967475BC03DE6FAFFD4897* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral92537122D3BA189947E3A15F355DFAEDFFC9243C);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Toggled == true)
+		bool L_0 = __this->___Toggled_4;
+		if (!L_0)
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		// transform.Find("Light and Particles").gameObject.SetActive(true);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
+		L_1 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_1);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+		L_2 = Transform_Find_m3087032B0E1C5B96A2D2C27020BAEAE2DA08F932(L_1, _stringLiteral92537122D3BA189947E3A15F355DFAEDFFC9243C, NULL);
+		NullCheck(L_2);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
+		L_3 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_2, NULL);
+		NullCheck(L_3);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)1, NULL);
+		return;
+	}
+
+IL_0024:
+	{
+		// transform.Find("Light and Particles").gameObject.SetActive(false);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
+		L_4 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_4);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5;
+		L_5 = Transform_Find_m3087032B0E1C5B96A2D2C27020BAEAE2DA08F932(L_4, _stringLiteral92537122D3BA189947E3A15F355DFAEDFFC9243C, NULL);
+		NullCheck(L_5);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6;
+		L_6 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_5, NULL);
+		NullCheck(L_6);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void TorchScript::ToggleLight()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TorchScript_ToggleLight_m180EE452CEB26D8DAE9AAB02D90EED2C424E17CD (TorchScript_tA7028B0F916C4DDD7C967475BC03DE6FAFFD4897* __this, const RuntimeMethod* method) 
+{
+	{
+		// Toggled = !Toggled;
+		bool L_0 = __this->___Toggled_4;
+		__this->___Toggled_4 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
+		// }
+		return;
+	}
+}
+// System.Void TorchScript::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TorchScript__ctor_mCD136CB8629D3F7F0B29D3738B96F8CE2E3C99A7 (TorchScript_tA7028B0F916C4DDD7C967475BC03DE6FAFFD4897* __this, const RuntimeMethod* method) 
+{
+	{
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
