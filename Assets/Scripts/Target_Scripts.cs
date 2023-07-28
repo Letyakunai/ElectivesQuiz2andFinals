@@ -31,23 +31,57 @@ public class Target_Scripts : MonoBehaviour
 
     private void CountCheck()
     {
+        //This is the most brute forced solution and I know it for a fact Ma'm.
         switch (Count)
         {
             case 1:
                 transform.Find("Target 2").gameObject.SetActive(false);
                 transform.Find("Target 3").gameObject.SetActive(false);
+                transform.Find("Target 4").gameObject.SetActive(false);
+                transform.Find("Target 5").gameObject.SetActive(false);
+                transform.Find("Target 6").gameObject.SetActive(false);
                 break;
             case 2:
                 transform.Find("Target 2").gameObject.SetActive(true);
                 transform.Find("Target 3").gameObject.SetActive(false);
+                transform.Find("Target 4").gameObject.SetActive(false);
+                transform.Find("Target 5").gameObject.SetActive(false);
+                transform.Find("Target 6").gameObject.SetActive(false);
                 break;
             case 3:
                 transform.Find("Target 2").gameObject.SetActive(true);
                 transform.Find("Target 3").gameObject.SetActive(true);
+                transform.Find("Target 4").gameObject.SetActive(false);
+                transform.Find("Target 5").gameObject.SetActive(false);
+                transform.Find("Target 6").gameObject.SetActive(false);
+                break;
+            case 4:
+                transform.Find("Target 2").gameObject.SetActive(true);
+                transform.Find("Target 3").gameObject.SetActive(true);
+                transform.Find("Target 4").gameObject.SetActive(true);
+                transform.Find("Target 5").gameObject.SetActive(false);
+                transform.Find("Target 6").gameObject.SetActive(false);
+                break;
+            case 5:
+                transform.Find("Target 2").gameObject.SetActive(true);
+                transform.Find("Target 3").gameObject.SetActive(true);
+                transform.Find("Target 4").gameObject.SetActive(true);
+                transform.Find("Target 5").gameObject.SetActive(true);
+                transform.Find("Target 6").gameObject.SetActive(false);
+                break;
+            case 6:
+                transform.Find("Target 2").gameObject.SetActive(true);
+                transform.Find("Target 3").gameObject.SetActive(true);
+                transform.Find("Target 4").gameObject.SetActive(true);
+                transform.Find("Target 5").gameObject.SetActive(true);
+                transform.Find("Target 6").gameObject.SetActive(true);
                 break;
             default:
                 transform.Find("Target 2").gameObject.SetActive(false);
                 transform.Find("Target 3").gameObject.SetActive(false);
+                transform.Find("Target 4").gameObject.SetActive(false);
+                transform.Find("Target 5").gameObject.SetActive(false);
+                transform.Find("Target 6").gameObject.SetActive(false);
                 break;
         }
     }
