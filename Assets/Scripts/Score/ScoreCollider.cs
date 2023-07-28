@@ -10,6 +10,8 @@ public class ScoreCollider : MonoBehaviour
     [SerializeField]
     private int Score;
 
+    public AudioSource HitSfx;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,7 @@ public class ScoreCollider : MonoBehaviour
         Debug.Log("This was Hit.");
         if(other.gameObject.tag == "Axe")
         scoreCollector.UpdateScore(Score);
+        HitSfx.Play();
     }
 
 }
