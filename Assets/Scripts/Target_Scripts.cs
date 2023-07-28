@@ -14,7 +14,7 @@ public class Target_Scripts : MonoBehaviour
     {
         CountCheck();
         if (Count < 1) { Count = 1; }
-        if (Count > 3) { Count = 3; }
+        if (Count > 5) { Count = 5; }
     }
 
     //Function to Add on the Count
