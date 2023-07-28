@@ -5,11 +5,10 @@ using UnityEngine;
 public class ScoreCollider : MonoBehaviour
 {
 
-    [SerializeField]
     private ScoreCollector scoreCollector;
 
     [SerializeField]
-    private int ScoreType;
+    private int Score;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +20,7 @@ public class ScoreCollider : MonoBehaviour
     {
         Debug.Log("This was Hit.");
         if(other.gameObject.tag == "Axe")
-        scoreCollector.UpdateScore(ScoreType);
+        scoreCollector.UpdateScore(Score);
     }
 
 }
