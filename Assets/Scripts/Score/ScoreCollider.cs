@@ -20,10 +20,12 @@ public class ScoreCollider : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("This was Hit.");
         if(other.gameObject.tag == "Axe")
+        {
+        Debug.Log("This was Hit.");
         scoreCollector.UpdateScore(Score);
         HitSfx.Play();
+        }
     }
 
 }
